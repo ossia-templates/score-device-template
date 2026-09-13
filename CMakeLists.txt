@@ -28,4 +28,7 @@ add_library(score_addon_my_device
 target_link_libraries(score_addon_my_device PUBLIC score_plugin_engine)
 
 # Target-specific options
-setup_score_plugin(score_addon_my_device)
+setup_score_addon(
+  TARGET score_addon_my_device
+  NAME "My Device"
+)
